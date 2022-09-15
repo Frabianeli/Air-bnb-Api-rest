@@ -86,13 +86,12 @@
 
 - /
 - - GET
-- - POST
 
 - /me
 - - GET (HOST)
-- - POST 
 
 - /me/:id
+- - GET
 - - DELETE (HOST)
 - - PUT (HOST)
 
@@ -101,10 +100,7 @@
 - - DELETE (ADMIN)
 - - PUT (ADMIN)
 
-- /:id/available/?arrival=values&departure=value
-- - GET
-
-- /:id/make-reservation
+- /:id/reservation
 - - POST
 
 ### Reservations
@@ -124,6 +120,19 @@
 
 - /:id
 - - GET (ADMIN)
+
+### Places
+
+- /api/v1/places
+
+- /
+- - GET
+
+- /:id
+- - GET
+
+- /:id/create-accommodation
+- - POST
 
 
 
