@@ -91,8 +91,7 @@ const generateData = async() => {
       continent: 'America'
     },
   ])
-
-  /*
+  
   await Accommodations.create({
     id: "7e5fc196-8f45-46d2-bb2b-2f8b95340d50",
     title: "premium - vistas 360 ciudad (alberca y gym)",
@@ -108,53 +107,37 @@ const generateData = async() => {
   })
 
   await Accommodations.create({
-    id: "35a42549-262e-4ad0-b6a9-82f281211992",
-    title: "Esta la creo junior",
-    description: "asdf",
-    guests: 6,
-    rooms: 3,
-    beds: 3,
-    bathrooms: 4.5,
-    price: 1536.0,
-    hostId: "3911e153-2d4a-4338-a4d6-a17fd38fea99",
-    placeId: "9c0412b6-7d56-4347-8fbe-5455e8a42438",
-    commision: 150.0,
+    id: "e9a995aa-5997-4180-97cf-a20dda8f814e",
+    title: "Node js",
+    description: "node js",
+    guests: 2,
+    rooms: 2,
+    beds: 1,
+    bathrooms: 2.5,
+    price: 3116.0,
+    hostId: "1098b922-3841-4416-a471-fb2ca0f7efa4",
+    placeId: "134a55b6-487c-46cc-a5b5-9392af20c205",
+    commision: 190.0,
   })
 
   await Reservations.create({
-    id: "7383c6f8-7bc2-4058-b099-c3aff3d6f6e4",
-    userId: "3911e153-2d4a-4338-a4d6-a17fd38fea99",
-    arrival: "2022-09-12 09:08:13.756 -0500",
-    departure: "2022-10-12 09:08:13.756 -0500",
-    accommodationId: "7e5fc196-8f45-46d2-bb2b-2f8b95340d50",
-    adults: 1,
-  })
-
-  await Reservations.create({
-    id: "59651d5f-b174-4d80-a6e5-fe22458ff112",
-    userId: "4093ab84-6ae6-4e20-809c-ecdec8e06267",
+    id: "81e08f92-0624-4d4a-ae13-8db8e2580f24",
+    userId: "1098b922-3841-4416-a471-fb2ca0f7efa4",
     arrival: "2022-09-12 09:08:13.756 -0500",
     departure: "2022-10-12 09:08:13.756 -0500",
     accommodationId: "7e5fc196-8f45-46d2-bb2b-2f8b95340d50",
     adults: 2,
-  }) */
-
- /* await Accommodations.create({
-      id: 'f2095856-3aec-4607-baf1-80716548ff06',
-      title: 'Example1',
-      description: 'example1234567890',
-      guests: 10,
-      rooms: 9,
-      beds: 8,
-      bathrooms: 4.5,
-      price: 200.00,
-      hostId: '74cd6011-7e76-4d6d-b25b-1d6e4182ec2f',
-      score: 0.0,
-      placesId: '134a55b6-487c-46cc-a5b5-9392af20c205',
-      comision: 10.0,
-      isActive: true
   })
-  */
+
+  await Reservations.create({
+    id: "868cdea6-b58a-4b3d-b4e9-29258eea499e",
+    userId: "74cd6011-7e76-4d6d-b25b-1d6e4182ec2f",
+    arrival: "2022-10-09 11:07:14.356 -0500",
+    departure: "2022-10-12 11:07:14.656 -0500",
+    accommodationId: "e9a995aa-5997-4180-97cf-a20dda8f814e",
+    adults: 4,
+  }) 
+  
 }
 
 
