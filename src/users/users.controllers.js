@@ -41,6 +41,7 @@ const createUser = async (data) => {
         roleId: "fef3a08d-2cec-4728-9745-7cbd2b37e557",
         address: data.address,
         profileImage: data.profile_image,
+        country: data.country,
         status: "active",
         verified: false,
     })
