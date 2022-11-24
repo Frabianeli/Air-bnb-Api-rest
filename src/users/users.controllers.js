@@ -38,7 +38,7 @@ const createUser = async (data) => {
         phone: data.phone,
         birthdayDate: data.birthday_date,
         dni: data.dni,
-        role_id: "fef3a08d-2cec-4728-9745-7cbd2b37e557",
+        roleId: "fef3a08d-2cec-4728-9745-7cbd2b37e557",
         address: data.address,
         profileImage: data.profile_image,
         status: "active",
