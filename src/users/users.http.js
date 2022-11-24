@@ -33,7 +33,9 @@ const register = (req, res) => {
         !body.email ||
         !body.password ||
         !body.birthday_date || 
-        !body.country
+        !body.country ||
+        !body.phone ||
+        !body.gender
     ){
       return res.status(400).json({
         message: 'All fields must be completed',
@@ -43,7 +45,9 @@ const register = (req, res) => {
             email: 'example@example.com',
             password: 'string',
             birthday_date:  'DD/MM/YYYY',
-            country: 'string'
+            country: 'string',
+            phone: 99898,
+            gender: 'string'
             }
         })
      } else {
